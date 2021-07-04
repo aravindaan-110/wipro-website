@@ -1,0 +1,135 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+
+}
+
+.collectInfoBox {
+    width: 500px;
+    height: 700px;
+    background: white;
+    color: black;
+    top: 50%;
+    border-radius: 20px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+
+}
+
+.collectInfoBox h2 {
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.collectInfoBox p {
+    margin: 0;
+    padding: 0;
+    color: black;
+    padding-bottom: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.collectInfoBox input {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+
+.collectInfoBox input[type="text"],
+input[type="date"] {
+    border: none;
+    border-bottom: 1.4px solid black;
+    background: transparent;
+    outline: none;
+    height: 15px;
+    color: black;
+    font-size: 16px;
+}
+
+.collectInfoBox input[type="text"]:focus {
+    border-bottom: 2px solid orange;
+    color: #ee7752;
+    /* text-align: center; */
+    height: 25px;
+    /* border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px; */
+
+}
+
+.collectInfoBox input[type="submit"] {
+    border: none;
+    outline: none;
+    align-content: center;
+    height: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.collectInfoBox input[type="submit"]:hover {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation-name: gradient;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+    /* animation: gradient 15s ease infinite; */
+
+    /* background: linear-gradient(to right, #FF3700, #FF8000); */
+    color: white;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Add this as a property for a selector to which the effect has to be applied*/
+
+/* Chrome and Safari */
+/* -webkit-border-top-left-radius:40px;
+	-webkit-border-top-right-radius:40px;
+	-webkit-border-bottom-right-radius:40px;
+	-webkit-border-bottom-left-radius:40px;
+	/* Firefox */
+/* -moz-border-radius-topleft:40px;
+	-moz-border-radius-topright:40px;
+	-moz-border-radius-bottomright:40px;
+	-moz-border-radius-bottomleft:40px; */
+/* Standard Syntax */
+/* border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px; */
